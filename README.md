@@ -13,7 +13,7 @@ ROS2 from Scratch
 
 ## Environment
 - OS: Ubuntu
-- ROS2 Distribution: (write yours here e.g. Humble, Iron)
+- ROS2 Distribution: Jazzy
 
 ## Progress
 - [x] Nodes
