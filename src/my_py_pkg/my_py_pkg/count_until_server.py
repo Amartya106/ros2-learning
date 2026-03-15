@@ -33,12 +33,16 @@ class CountUntilServerNode(Node):
         target_number = goal_handle.request.target_number
         delay = goal_handle.request.delay
         result = CountUntil.Result()
+        feedback = CountUntil.Feedback()
         counter = 0
 
         for i in range(target_number):
             counter +=1
             self.get_logger().info(str(counter))
+            feedback.current_number = counter
+            goal_handle.publish_feedback(feedback)
             time.sleep(delay)
+
 
         goal_handle.succeed()
         result.reached_number = counter

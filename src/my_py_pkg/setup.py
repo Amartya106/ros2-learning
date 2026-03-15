@@ -28,8 +28,11 @@ setup(
             "num_pub = my_py_pkg.number_publisher:main",
             "num_count = my_py_pkg.number_counter:main",
             "my_pub = my_py_pkg.my_own_pub:main",
-            "reset_counter_client = my_py_pkg.reset_counter_clinet:main"
-
+            "reset_counter_client = my_py_pkg.reset_counter_clinet:main",
+            "count_until_server_min = my_py_pkg.count_until_server_minimal:main",
+            "count_until_client_min = my_py_pkg.count_until_client_minimal:main",
+            "count_until_server = my_py_pkg.count_until_server:main",
+            "count_until_client = my_py_pkg.count_until_client:main"
         ],
     },
 )
